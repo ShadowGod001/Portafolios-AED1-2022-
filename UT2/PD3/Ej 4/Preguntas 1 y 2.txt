@@ -1,0 +1,3 @@
+1) Luego de ejecutarse la única referencia que queda a studentsName es la que esta guardada en la posición 0 del array students. Al haber asignado null a studentsName, este se vuelve inaccesible y por lo tanto será eliminado por el garbage collector y la memoria será liberada.
+
+2) Al asignarlo a null, indirectamente lo está eliminando ya que al dejarlo de usar lo deja a disposición del garbage collector para eliminarlo y liberar memoria.

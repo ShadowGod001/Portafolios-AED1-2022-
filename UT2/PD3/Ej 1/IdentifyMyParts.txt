@@ -1,0 +1,23 @@
+public class IdentifyMyParts {
+	
+	public static int x = 7; //variable de clase
+	public int y = 3; //variable de instancia
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		IdentifyMyParts a = new IdentifyMyParts();
+		IdentifyMyParts b = new IdentifyMyParts();
+		a.y = 5;
+		b.y = 6;
+		a.x = 1;
+		b.x = 2;
+		System.out.println("a.y = " + a.y); //a.y = 5
+		System.out.println("b.y = " + b.y); //b.y = 6
+		System.out.println("a.x = " + a.x); //a.y = 2 porque el b.x reescribe el valor de la variable de clase a 2
+		System.out.println("b.x = " + b.x); //b.x = 2
+		System.out.println("IdentifyMyParts.x = " + IdentifyMyParts.x); //IdentifyMyParts.x = 2
+
+	}
+
+}
