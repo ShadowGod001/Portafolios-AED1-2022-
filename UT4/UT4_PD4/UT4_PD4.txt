@@ -1,0 +1,43 @@
+Ej1
+
+factorial(int n): devuelve entero
+SI n=0 // caso base
+	n = 1
+FIN SI
+SINO 
+	n = n*factorial(n-1)
+FIN SI
+return n
+
+Se llegará al caso base siempre que n sea entero positivo
+
+Orden de ejecución: O(n)+1 siendo n el entero recibido como argumento
+
+Casos de prueba:
+
+Probar el método con distintos valores de entrada :0, 4, -4
+
+En el caso del 0 va a devolver 1 por entrar al caso base
+
+En el caso del 4 va a devolver 24
+
+En el caso del -4 va a entrar en loop infinito porque nunca va a llegar al caso base
+
+------------------------------------
+Ej2
+
+sumaLineal (int[] a, int n): devuelve entero
+SI n==1 //caso base
+	n= a[0]
+SINO
+	n = sumaLineal(a,n-1) + a[n-1]
+FIN SI
+return n
+
+Se llegará al caso base siempre que n sea entero positivo
+En caso de que n sea negativo arrojará excepción index out of bounds
+
+Orden de ejecución: O(n) siendo n el entero recibido como argumento
+
+Si el array esta vacio arroja index out of bounds
+
