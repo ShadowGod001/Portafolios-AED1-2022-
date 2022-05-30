@@ -19,7 +19,7 @@ public class Main {
        System.out.println(factorial.calcularFactorial(0));
 
        Sumalineal sumalineal = new Sumalineal();
-       int[] a = {};
+       int[] a = {4,3,6,2,5};
        System.out.println(sumalineal.calcularSumaLineal(a, 5));
     }
 }
