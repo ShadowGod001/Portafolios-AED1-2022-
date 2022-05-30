@@ -1,0 +1,19 @@
+TArbolBB<Consultas> obtenerConsultasDelDia(String fecha) // realiza la recorrida de los afiliados, las listas de consultas anotados, filtra por fecha (parámetro) y los carga en un TArbolBB para retornar.
+Inicio
+TArbolBB<Consultas> toReturn = new TArbolBB<Consultas>()
+ILista<Afiliado> afiliados = this.inOrden();
+Nodo auxAfiliado = afiliados.getPrimero
+MIENTRAS auxAfiliado != null 
+	Nodo auxConsulta = this.listaConsulta.getPrimero
+	MIENTRAS auxConsulta != null
+		SI this.getDato.getFecha.equals(fecha) && this.getDato.getResultado == 0
+			TNodoABB<Consulta> consultaInsertar = new Nodo<Consulta> (this.getDato.getCi+this.getDato.getFecha+this.getDato.getEspecialidad,this.getDato)
+			toReturn.insertar(consultaInsertar)
+		FIN SI
+		auxConsulta = auxConsulta.getSiguiente()
+	FIN MIENTRAS
+	auxAfiliado = auxAfiliado.getSiguiente()
+FIN MIENTRAS
+return toReturn
+FIN
+			
